@@ -50,7 +50,7 @@ export default function Modal() {
   }, [locationShow])
 
   useEffect(() => {
-    if (locationInput.length >= 3) setshowList(true)
+    if (locationInput.length > 3) setshowList(true)
     else setshowList(false)
   }, [locationInput])
 

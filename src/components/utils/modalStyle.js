@@ -26,18 +26,12 @@ const ModalApp = styled.div`
 
   &.show {
     top: 120px;
-
-    footer {
-      bottom: 20px;
-    }
   }
 
   footer {
-    ${Fixed};
-    background-color: transparent;
-    bottom: -5em;
+    background-color: white;
+    padding: 4px;
     text-align: center;
-    top: unset;
   }
 `
 
@@ -71,6 +65,7 @@ const InputContainer = styled.div`
   border: 1px solid rgb(241, 241, 242);
   display: flex;
   margin-top: 24px;
+  min-height: 45px;
   padding: 8px;
 
   input {
@@ -85,7 +80,6 @@ const InputContainer = styled.div`
 const ListContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 55%;
   margin-top: 24px;
   overflow-y: scroll;
   visibility: hidden;
@@ -97,6 +91,7 @@ const ListContainer = styled.div`
 const List = styled.div`
   display: flex;
   margin: 16px 0px;
+  min-height: 52px;
 `
 
 const Pin = styled.div`

@@ -11,7 +11,7 @@ export default function Home({ setdistY }) {
   }
 
   return (
-    <HomeApp onWheel={onWheel}>
+    <HomeApp id="home-app" onWheel={onWheel}>
       <h3>{Data[0].date.format("ddd, D MMM YYYY")}</h3>
       <Card />
     </HomeApp>

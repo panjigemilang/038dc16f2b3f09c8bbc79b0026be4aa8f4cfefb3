@@ -44,9 +44,13 @@ export default function Modal() {
   ]
 
   useEffect(() => {
-    if (locationShow)
+    if (locationShow) {
       document.getElementsByTagName("body")[0].style.overflow = "hidden"
-    else document.getElementsByTagName("body")[0].style.overflow = "hidden auto"
+      document.getElementById("home-app").style.overflow = "hidden"
+    } else {
+      document.getElementsByTagName("body")[0].style.overflow = "hidden auto"
+      document.getElementById("home-app").style.overflow = "hidden auto"
+    }
   }, [locationShow])
 
   useEffect(() => {
